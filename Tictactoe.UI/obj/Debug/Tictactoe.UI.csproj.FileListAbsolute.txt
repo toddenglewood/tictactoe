@@ -1,0 +1,13 @@
+C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.UI\obj\Debug\Tictactoe.UI.csprojResolveAssemblyReference.cache
+C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.UI\obj\Debug\Tictactoe.UI.Form1.resources
+C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.UI\obj\Debug\Tictactoe.UI.Properties.Resources.resources
+C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.UI\obj\Debug\Tictactoe.UI.csproj.GenerateResource.Cache
+C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.UI\bin\Debug\Tictactoe.UI.exe.config
+C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.UI\bin\Debug\Tictactoe.UI.exe
+C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.UI\bin\Debug\Tictactoe.UI.pdb
+C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.UI\bin\Debug\TicTactoe.API.dll
+C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.UI\bin\Debug\Tictactoe.Domain.dll
+C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.UI\bin\Debug\TicTactoe.API.pdb
+C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.UI\bin\Debug\Tictactoe.Domain.pdb
+C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.UI\obj\Debug\Tictactoe.UI.exe
+C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.UI\obj\Debug\Tictactoe.UI.pdb

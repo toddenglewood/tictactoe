@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tictactoe.Domain", "Tictactoe.Domain\Tictactoe.Domain.csproj", "{5D88DF85-671A-4320-A551-59907EDEA380}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tictactoe.API", "TicTactoe.API\Tictactoe.API.csproj", "{FA5C95CE-1AB1-48E0-95B9-BE4D7D419584}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tictactoe.UI", "Tictactoe.UI\Tictactoe.UI.csproj", "{F6FBD18A-8613-424A-BB07-117482DB6F15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5D88DF85-671A-4320-A551-59907EDEA380}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D88DF85-671A-4320-A551-59907EDEA380}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D88DF85-671A-4320-A551-59907EDEA380}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D88DF85-671A-4320-A551-59907EDEA380}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA5C95CE-1AB1-48E0-95B9-BE4D7D419584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA5C95CE-1AB1-48E0-95B9-BE4D7D419584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA5C95CE-1AB1-48E0-95B9-BE4D7D419584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA5C95CE-1AB1-48E0-95B9-BE4D7D419584}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6FBD18A-8613-424A-BB07-117482DB6F15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6FBD18A-8613-424A-BB07-117482DB6F15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6FBD18A-8613-424A-BB07-117482DB6F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6FBD18A-8613-424A-BB07-117482DB6F15}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
