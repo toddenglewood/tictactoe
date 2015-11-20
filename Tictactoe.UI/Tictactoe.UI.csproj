@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Ninject, Version=3.2.0.0, Culture=neutral, PublicKeyToken=c7192dc5380945e7, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -66,6 +70,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -83,6 +88,10 @@
     <ProjectReference Include="..\TicTactoe.API\Tictactoe.API.csproj">
       <Project>{fa5c95ce-1ab1-48e0-95b9-be4d7d419584}</Project>
       <Name>Tictactoe.API</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tictactoe.DependencyResolver\Tictactoe.DependencyResolver.csproj">
+      <Project>{6bdd2291-e3c2-4f6d-9d05-aca3df784165}</Project>
+      <Name>Tictactoe.DependencyResolver</Name>
     </ProjectReference>
     <ProjectReference Include="..\Tictactoe.Domain\Tictactoe.Domain.csproj">
       <Project>{5d88df85-671a-4320-a551-59907edea380}</Project>

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ninject.Modules;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,6 +10,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tictactoe.Domain;
 using TicTactoe.API;
+using Tictactoe.DependencyResolver;
+using Ninject;
+using Ninject.Parameters;
 
 namespace Tictactoe.UI
 {
@@ -16,10 +20,15 @@ namespace Tictactoe.UI
     {   
         private  GameAPI GameAPI { get; } = new GameAPI();
         private  IGame CurrentGame { get; set; }
+        IKernel kernel = new StandardKernel();
 
         public Form1()
         {
             InitializeComponent();
+
+            // Load all dependencies
+            var modules = new List<INinjectModule> { new TictactoeModule() };
+            kernel.Load(modules);
         }
 
         private void buttonNewGameSingle_Click(object sender, EventArgs e)
@@ -42,10 +51,17 @@ namespace Tictactoe.UI
             EnableBoard(true);
             ResetBoard();
 
-            IGameFactory factory = new GameFactory(new PlayerFactory()); // Resolve facotry
-            IBoard board = new Board(3,3); // Resolve board
+            // Without IoC
+            //IPlayerFactory playerFactory = new PlayerFactory(); // Resolve player facotry
+            //IGameFactory gameFactory = new GameFactory(playerFactory); // Resolve game facotry
+            //IBoard board = new Board(3,3); // Resolve board
 
-            CurrentGame = GameAPI.CreateGame(factory, type, board);
+            // With IoC
+            IPlayerFactory playerFactory = kernel.Get<IPlayerFactory>();
+            IGameFactory gameFactory = kernel.Get<IGameFactory>(new ConstructorArgument("playerFactory", playerFactory));
+            IBoard board = kernel.Get<IBoard>(new ConstructorArgument("width", 3), new ConstructorArgument("height", 3));
+
+            CurrentGame = GameAPI.CreateGame(gameFactory, type, board);
         }
 
         private void button_Click(object sender, EventArgs e)

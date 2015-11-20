@@ -134,6 +134,7 @@
             // 
             // buttonNewGameSingle
             // 
+            this.buttonNewGameSingle.Enabled = false;
             this.buttonNewGameSingle.Location = new System.Drawing.Point(224, 36);
             this.buttonNewGameSingle.Name = "buttonNewGameSingle";
             this.buttonNewGameSingle.Size = new System.Drawing.Size(312, 72);

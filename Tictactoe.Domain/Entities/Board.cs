@@ -9,10 +9,10 @@ namespace Tictactoe.Domain
         public int[,] Fields { get; set; }
         public int WinnerId { get; set; }
 
-        public Board(int width, int heigh)
+        public Board(int width, int height)
         {
             Width = width;
-            Height = heigh;
+            Height = height;
             Reset();
         }
 

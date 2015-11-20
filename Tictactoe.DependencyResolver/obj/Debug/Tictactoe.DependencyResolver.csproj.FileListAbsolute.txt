@@ -1,0 +1,9 @@
+C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.DependencyResolver\bin\Debug\Tictactoe.DependencyResolver.dll
+C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.DependencyResolver\bin\Debug\Tictactoe.DependencyResolver.pdb
+C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.DependencyResolver\bin\Debug\Ninject.dll
+C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.DependencyResolver\bin\Debug\Ninject.xml
+C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.DependencyResolver\obj\Debug\Tictactoe.DependencyResolver.dll
+C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.DependencyResolver\obj\Debug\Tictactoe.DependencyResolver.pdb
+C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.DependencyResolver\bin\Debug\Tictactoe.Domain.dll
+C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.DependencyResolver\bin\Debug\Tictactoe.Domain.pdb
+C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.DependencyResolver\obj\Debug\Tictactoe.DependencyResolver.csprojResolveAssemblyReference.cache

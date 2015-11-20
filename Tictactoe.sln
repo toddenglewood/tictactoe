@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tictactoe.API", "TicTactoe.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tictactoe.UI", "Tictactoe.UI\Tictactoe.UI.csproj", "{F6FBD18A-8613-424A-BB07-117482DB6F15}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tictactoe.DependencyResolver", "Tictactoe.DependencyResolver\Tictactoe.DependencyResolver.csproj", "{6BDD2291-E3C2-4F6D-9D05-ACA3DF784165}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F6FBD18A-8613-424A-BB07-117482DB6F15}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6FBD18A-8613-424A-BB07-117482DB6F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6FBD18A-8613-424A-BB07-117482DB6F15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BDD2291-E3C2-4F6D-9D05-ACA3DF784165}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BDD2291-E3C2-4F6D-9D05-ACA3DF784165}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BDD2291-E3C2-4F6D-9D05-ACA3DF784165}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BDD2291-E3C2-4F6D-9D05-ACA3DF784165}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
