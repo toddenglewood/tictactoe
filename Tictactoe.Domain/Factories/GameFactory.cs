@@ -4,40 +4,15 @@ namespace Tictactoe.Domain
 {
     public class GameFactory : IGameFactory
     {
-        private IPlayerFactory PlayerFactory { get; }
-
-        public GameFactory(IPlayerFactory playerFactory)
+        public IBoard Board { get; set; }
+        public GameFactory(IBoard board)
         {
-            PlayerFactory = playerFactory;
+            Board = board;
         }
 
-        public IGame CreateGame(GameType type, IBoard board)
+        public IGame Create(IEnumerable<IPlayer> players)
         {
-            switch (type)
-            {
-                case GameType.SinglePlayer:
-                    return new Game(type, board, new List<IPlayer> { CreateHuman(1), CreateBot(2) });
-                case GameType.TwoPlayers:
-                    return new Game(type, board, new List<IPlayer> { CreateHuman(1), CreateHuman(2) });
-                case GameType.Online:
-                    return new Game(type, board, new List<IPlayer> { CreateHuman(1), CreateOnlinePlayer(2) });
-            }
-            return null;
-        }
-
-        private IPlayer CreateBot(int id)
-        {
-            return PlayerFactory.CreatePlayer(PlayerType.Bot, id);
-        }
-
-        private IPlayer CreateHuman(int id)
-        {
-            return PlayerFactory.CreatePlayer(PlayerType.Human, id);
-        }
-
-        private IPlayer CreateOnlinePlayer(int id)
-        {
-            return PlayerFactory.CreatePlayer(PlayerType.OnlinePlayer, id);
+            return new Game(Board, players);
         }
     }
 }

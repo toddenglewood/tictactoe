@@ -1,7 +1,10 @@
+using System.Collections.Generic;
+
 namespace Tictactoe.Domain
 {
     public interface IGameFactory
     {
-        IGame CreateGame(GameType type, IBoard board);
+        IBoard Board { get; set; }
+        IGame Create(IEnumerable<IPlayer> players);
     }
 }

@@ -7,3 +7,9 @@ C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.DependencyResolver\obj\
 C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.DependencyResolver\bin\Debug\Tictactoe.Domain.dll
 C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.DependencyResolver\bin\Debug\Tictactoe.Domain.pdb
 C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.DependencyResolver\obj\Debug\Tictactoe.DependencyResolver.csprojResolveAssemblyReference.cache
+C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.DependencyResolver\bin\Debug\Castle.Core.dll
+C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.DependencyResolver\bin\Debug\Ninject.Extensions.Factory.dll
+C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.DependencyResolver\bin\Debug\Castle.Core.xml
+C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.DependencyResolver\bin\Debug\Ninject.Extensions.Factory.xml
+C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.DependencyResolver\bin\Debug\Ninject.Extensions.Conventions.dll
+C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.DependencyResolver\bin\Debug\Ninject.Extensions.Conventions.xml

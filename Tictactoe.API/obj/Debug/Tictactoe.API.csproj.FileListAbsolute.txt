@@ -1,7 +1,0 @@
-C:\Data\Projects\BoardGame\Prototype\Tictactoe\TicTactoe.API\bin\Debug\TicTactoe.API.dll
-C:\Data\Projects\BoardGame\Prototype\Tictactoe\TicTactoe.API\bin\Debug\TicTactoe.API.pdb
-C:\Data\Projects\BoardGame\Prototype\Tictactoe\TicTactoe.API\bin\Debug\Tictactoe.Domain.dll
-C:\Data\Projects\BoardGame\Prototype\Tictactoe\TicTactoe.API\bin\Debug\Tictactoe.Domain.pdb
-C:\Data\Projects\BoardGame\Prototype\Tictactoe\TicTactoe.API\obj\Debug\Tictactoe.API.csprojResolveAssemblyReference.cache
-C:\Data\Projects\BoardGame\Prototype\Tictactoe\TicTactoe.API\obj\Debug\TicTactoe.API.dll
-C:\Data\Projects\BoardGame\Prototype\Tictactoe\TicTactoe.API\obj\Debug\TicTactoe.API.pdb

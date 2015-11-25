@@ -9,26 +9,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Tictactoe.Domain;
-using TicTactoe.API;
-using Tictactoe.DependencyResolver;
-using Ninject;
-using Ninject.Parameters;
+
 
 namespace Tictactoe.UI
 {
     public partial class Form1 : Form
     {   
-        private  GameAPI GameAPI { get; } = new GameAPI();
-        private  IGame CurrentGame { get; set; }
-        IKernel kernel = new StandardKernel();
+        public IGame CurrentGame { get; set; }
 
-        public Form1()
+        private readonly IGameFactory GameFactory;
+        private readonly IPlayerFactory PlayerFactory;
+
+        public Form1(IGameFactory gameFactory = null, IPlayerFactory playerFactory = null)
         {
             InitializeComponent();
 
-            // Load all dependencies
-            var modules = new List<INinjectModule> { new TictactoeModule() };
-            kernel.Load(modules);
+            GameFactory = gameFactory;
+            PlayerFactory = playerFactory;
         }
 
         private void buttonNewGameSingle_Click(object sender, EventArgs e)
@@ -50,18 +47,11 @@ namespace Tictactoe.UI
         {
             EnableBoard(true);
             ResetBoard();
-
-            // Without IoC
-            //IPlayerFactory playerFactory = new PlayerFactory(); // Resolve player facotry
-            //IGameFactory gameFactory = new GameFactory(playerFactory); // Resolve game facotry
-            //IBoard board = new Board(3,3); // Resolve board
-
-            // With IoC
-            IPlayerFactory playerFactory = kernel.Get<IPlayerFactory>();
-            IGameFactory gameFactory = kernel.Get<IGameFactory>(new ConstructorArgument("playerFactory", playerFactory));
-            IBoard board = kernel.Get<IBoard>(new ConstructorArgument("width", 3), new ConstructorArgument("height", 3));
-
-            CurrentGame = GameAPI.CreateGame(gameFactory, type, board);
+           
+            CurrentGame = GameFactory.Create(new List<IPlayer> {
+                PlayerFactory.CreatePlayer(PlayerType.Human, 1),
+                PlayerFactory.CreatePlayer(PlayerType.Human, 2)
+            });
         }
 
         private void button_Click(object sender, EventArgs e)

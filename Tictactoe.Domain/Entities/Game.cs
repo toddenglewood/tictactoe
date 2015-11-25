@@ -10,14 +10,12 @@ namespace Tictactoe.Domain
     {
         private int currentPlayerIndex = 1;
 
-        public Game(GameType type, IBoard board, List<IPlayer> players)
+        public Game(IBoard board, IEnumerable<IPlayer> players)
         {
-            Type = type;
             Board = board;
-            Players = players;
+            Players = players.ToList();
         }
 
-        public GameType Type { get; }
         public IBoard Board { get; }
         public List<IPlayer> Players { get; }
 

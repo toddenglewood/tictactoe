@@ -8,7 +8,6 @@ namespace Tictactoe.Domain
 {
     public interface IGame
     {
-        GameType Type { get; }
         IBoard Board { get; }
         List<IPlayer> Players { get; }
 
