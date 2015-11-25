@@ -4,7 +4,8 @@
     {
         int Width { get; set; }
         int Height { get; set; }
-        int[,] Fields { get; set; }
+        IField[,] Fields { get; set; }
+        IFieldFactory FieldFactory { get; set; }
         int WinnerId { get; set; }
 
         void Reset();

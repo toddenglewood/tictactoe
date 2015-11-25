@@ -2,4 +2,3 @@ C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.Domain\bin\Debug\Tictac
 C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.Domain\bin\Debug\Tictactoe.Domain.pdb
 C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.Domain\obj\Debug\Tictactoe.Domain.dll
 C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.Domain\obj\Debug\Tictactoe.Domain.pdb
-C:\Data\Projects\BoardGame\Prototype\Tictactoe\Tictactoe.Domain\obj\Debug\Tictactoe.Domain.csprojResolveAssemblyReference.cache

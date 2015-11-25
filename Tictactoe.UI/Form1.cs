@@ -49,8 +49,8 @@ namespace Tictactoe.UI
             ResetBoard();
            
             CurrentGame = GameFactory.Create(new List<IPlayer> {
-                PlayerFactory.CreatePlayer(PlayerType.Human, 1),
-                PlayerFactory.CreatePlayer(PlayerType.Human, 2)
+                PlayerFactory.Create(PlayerType.Human, 1),
+                PlayerFactory.Create(PlayerType.Human, 2)
             });
         }
 
